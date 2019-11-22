@@ -6,6 +6,10 @@ variable "region" {
   default = "us-east-1"
 }
 
+variable "account" {
+  default = "977013388575"
+}
+
 variable "key_name" {
   description = "Private key name to use with instance"
   default     = "dev"
@@ -22,3 +26,4 @@ variable "ami" {
  
   default = "ami-00068cd7555f543d5"
 }
+
