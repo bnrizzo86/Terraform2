@@ -39,18 +39,11 @@ resource "aws_instance" "default" {
 resource "aws_security_group" "default" {
   name = "terraform-default-sg"
 
-  ingress {
-    from_port   = 80
-    to_port     = 80
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-
-  ingress {
+   ingress {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["136.49.19.204/32"]
   }
 
 }
