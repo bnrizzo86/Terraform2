@@ -16,7 +16,8 @@ provider "aws" {
 terraform {
   backend "s3" {
     # this key must be unique for each layer!
-    key     = "terraform.pipeline-dev.tfstate"
+    bucket     = "terraform-pipeline-dev"
+    key        = "terraform-pipeline.tfstate"
     region  = "us-east-1"
     encrypt = "true"
   }
