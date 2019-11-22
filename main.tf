@@ -31,9 +31,7 @@ resource "aws_instance" "default" {
   source_dest_check      = false
   instance_type          = "${var.instance_type}"
 
-  tags {
-    Name = "terraform-default"
-  }
+  
 }
 
 # Create Security Group for EC2
